@@ -1,0 +1,70 @@
+/* Estilos base */
+.app {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.appTitle {
+  position: absolute;
+  top: 2.5em;
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  text-shadow: -1px 0 #414d68, 0 1px #414d68, 1px 0 #414d68, 0 -1px #414d68,
+    -2px 2px 0 #414d68, 2px 2px 0 #414d68, 1px 1px #414d68, 2px 2px #414d68,
+    3px 3px #414d68, 4px 4px #414d68, 5px 5px #414d68, 6px 6px #414d68,
+    7px 7px #414d68, 8px 8px #414d68, 9px 9px #414d68;
+}
+
+.card {
+  font-size: 1.2rem;
+  padding: 1.5em;
+  border-radius: 0.8em;
+  width: 200%;
+  max-width: 500px;
+  background-color: white;
+  line-height: 1.8;
+  border: 0.15em solid #6894b4;
+  color: #00000088;
+  box-shadow: 0.3 0.3em 1em #0008;
+}
+
+.button {
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  background-color: #ffa645;
+  font-weight: 500;
+  color: #893446;
+  border: 0.1em solid currentColor;
+  transition: transform 100ms ease, filter 100ms ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  border: 5px dashed;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .appTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    top: 1em;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 100%;
+  }
+}
